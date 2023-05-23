@@ -1,0 +1,29 @@
+$border-color: #ccc;
+$max-width: 300px;
+$hover-transition: 0.3s;
+$card-max-width: 300px;
+$box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+$hover-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+.SassCard {
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid $border-color;
+    box-shadow: $box-shadow;
+    transition: $hover-transition;
+    max-width: $card-max-width;
+    &:hover {
+        box-shadow: $hover-box-shadow;
+    }
+    header {
+        border-bottom: 1px solid #999;
+        padding: 0.3rem 1rem;
+        font-size: 1.5rem;
+        h1 {
+            margin: 0;
+        }
+    }
+    .content {
+        padding: 10px;
+    }
+}
